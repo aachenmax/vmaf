@@ -33,8 +33,8 @@ install:
   - set "PATH=C:\msys64\mingw64\bin;C:\msys64\mingw32\bin;C:\msys64\usr\bin;%PATH%"
   - set MSYS2_PATH_TYPE=inherit
   # Download ninja and meson
-  - pacman -Syyuu --ask=20 --noconfirm --noprogressbar --needed
-  - pacman -Sy --ask=20 --noconfirm --noprogressbar --needed mingw-w64-x86_64-ninja mingw-w64-x86_64-meson
+  - pacman -Suy --noconfirm
+  - pacman -Sy --noconfirm --needed mingw-w64-x86_64-ninja mingw-w64-x86_64-meson
   #- set CFLAGS=/D_TIMESPEC_DEFINED /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
   # Set up the build environment
   #- if "%compiler%"=="msvc2015" ( call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" %arch% )
