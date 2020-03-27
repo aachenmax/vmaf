@@ -1,7 +1,7 @@
 os: Visual Studio 2017
 
 environment:
-  APPVEYOR_SAVE_CACHE_ON_ERROR: true
+  #APPVEYOR_SAVE_CACHE_ON_ERROR: true
   #LDFLAGS: -static-libgcc -static-libstdc++
   matrix:
     #- arch: x86
@@ -63,5 +63,5 @@ artifacts:
   - path: libvmaf\build\meson-logs\*.txt
 
 cache:
-  - 'C:\msys64\home\appveyor\.ccache'
-  - 'C:\msys64\var\cache\pacman\pkg'
+  #- 'C:\msys64\home\appveyor\.ccache'
+  #- 'C:\msys64\var\cache\pacman\pkg'
