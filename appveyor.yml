@@ -55,6 +55,7 @@ test_script:
 
 after_build:
   - 7z a vmaf-win-%arch%.zip install\**\*.*
+  - 7z a libvmaf.zip C:\projects\vmaf\libvmaf\*
 
 artifacts:
   - path: libvmaf\**\*.zip
